@@ -10,19 +10,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
     <section class="max-h-screen bg-black text-white">
-        <div class="upper h-16 bg-[#ffffff20] p-2 px-6 rounded-lg">
+        <div class="upper h-15  p-2 px-6 rounded-lg">
             <div class="flex justify-between item-center">
-                <div> <i class="fa-brands fa-spotify"></i> </div>
-                <div><i class="fa-solid fa-house"></i></div>
+                <div> <i class="fa-brands fa-spotify text-3xl"></i> </div>
+                <div class="flex flex-row gap-2"><i class="fa-solid fa-house text-2xl"></i>
+                    <div class="relative flex flex-row"><input type="text" class="p-2 ps-10 pe-12 bg-[#ffffff20] rounded-full w-[25rem] placeholder:font-bold"
+                            placeholder="What do you want to play?">
+                        <div class="absolute left-3 top-2"><i class="fa-solid fa-magnifying-glass text-2xl text-[#ffffff80]"></i></div>
+                        <span class="absolute right-3 top-2 "><svg data-encore-id="icon" role="img" aria-hidden="true"
+                            viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE h-6 w-6">
+                            <path fill="white"
+                                d="M4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H4V2zM1.513 9.37A1 1 0 0 1 2.291 9H21.71a1 1 0 0 1 .978 1.208l-2.17 10.208A2 2 0 0 1 18.562 22H5.438a2 2 0 0 1-1.956-1.584l-2.17-10.208a1 1 0 0 1 .201-.837zM12 17.834c1.933 0 3.5-1.044 3.5-2.333 0-1.289-1.567-2.333-3.5-2.333S8.5 14.21 8.5 15.5c0 1.289 1.567 2.333 3.5 2.333z">
+                            </path>
+                        </svg></span>
+                    </div>
+                </div>
+                
                 <div><button>Sign up</button>
                     <button class="bg-white text-black px-5 py-1 font-bold rounded-full">Log in</button>
                 </div>
             </div>
         </div>
-        <div class="middle h-full flex">
-            <div class="left h-full w-[25%] bg-[#ffffff50] p-2 rounded-lg">
+        <div class="middle h-full flex p-2">
+            <div class="left max-h-screen w-[25%] bg-[#ffffff10] p-2 rounded-lg">
                 <div class="flex justify-between item-center px-4 mb-6">
                     <div class="flex gap-2">
                         <span><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
@@ -80,169 +93,190 @@
                     </div>
                 </div>
             </div>
-            <div class="right h-full w-[75%]">
-                <div class="h-80 overflow-x-auto ">
-                    <div class=" mt-4">
-                        <div class="px-6 flex justify-between">
-                            <span class="font-bold text-2xl">Popular Artists</span>
-                            <span class="text-sm font-bold text-[#ffffff90]">Show all</span>
-                        </div>
-                        <div class="flex flex-row">
-                            <ul class="flex py-4 px-2">
-                                <li class=" pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                    <div class="relative">
-                                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                            alt="" class="h-40 w-40 rounded-full custom-shadow object-cover">
-                                        <button
-                                            class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                                class="fa-solid fa-play"></i></button>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <span class="text-lg">Pritam</span>
-                                        <span class="text-md text-[#ffffff90]">Artist</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="flex py-4 px-2">
-                                <li class=" pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                    <div class="relative">
-                                        <img src="a r rahman.png" alt=""
-                                            class="h-40 w-40 rounded-full custom-shadow object-cover">
-                                        <button
-                                            class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                                class="fa-solid fa-play"></i></button>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <span class="text-lg">A.R Rahman</span>
-                                        <span class="text-md text-[#ffffff90]">Artist</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="flex py-4 px-2">
-                                <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                    <div class="relative">
-                                        <img src="Arijit.png" alt=""
-                                            class="h-40 w-40 rounded-full custom-shadow object-cover">
-                                        <button
-                                            class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                                class="fa-solid fa-play"></i></button>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <span class="text-lg">Arijit Singh</span>
-                                        <span class="text-md text-[#ffffff90]">Artist</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="flex py-4 px-2">
-                                <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                    <div class="relative">
-                                        <img src="sachin.png" alt=""
-                                            class="h-40 w-40 rounded-full custom-shadow object-cover">
-                                        <button
-                                            class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                                class="fa-solid fa-play"></i></button>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <span class="text-lg">Sachin-Jigar</span>
-                                        <span class="text-md text-[#ffffff90]">Artist</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
+            <div class="right h-[80vh] overflow-y-auto w-[75%] bg-[#ffffff12] ms-2 rounded-lg">
+
+                <div class=" mt-4 p-4">
                     <div class="px-6 flex justify-between">
-                        <span class="text-2xl font-bold">Popular Albums</span>
+                        <span class="font-bold text-2xl">Popular Artists</span>
                         <span class="text-sm font-bold text-[#ffffff90]">Show all</span>
                     </div>
                     <div class="flex flex-row">
                         <ul class="flex py-4 px-2">
-                            <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <li class=" pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
                                 <div class="relative">
-                                    <img src="aashiqui.png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt=""
+                                        class="h-40 w-40 rounded-full custom-shadow object-cover">
                                     <button
                                         class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
                                             class="fa-solid fa-play"></i></button>
                                 </div>
                                 <div class="flex flex-col">
-                                    <span>Aashiqui 2</span>
-                                    <span class="text-sm text-[#ffffff90]">Mithoon,Ankit tiwari,</span>
-                                    <span class="text-sm text-[#ffffff90]">Jeet gangooli</span>
+                                    <span class="text-lg">Pritam</span>
+                                    <span class="text-md text-[#ffffff90]">Artist</span>
                                 </div>
+                            </li>
+                        </ul>
+                        <ul class="flex py-4 px-2">
+                            <li class=" pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                                <div class="relative">
+                                    <img src="a r rahman.png" alt=""
+                                        class="h-40 w-40 rounded-full custom-shadow object-cover">
+                                    <button
+                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                            class="fa-solid fa-play"></i></button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-lg">A.R Rahman</span>
+                                    <span class="text-md text-[#ffffff90]">Artist</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="flex py-4 px-2">
+                            <li class=" pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                                <div class="relative">
+                                    <img src="Arijit.png" alt=""
+                                        class="h-40 w-40 rounded-full custom-shadow object-cover">
+                                    <button
+                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                            class="fa-solid fa-play"></i></button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-lg">Arijit Singh</span>
+                                    <span class="text-md text-[#ffffff90]">Artist</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="flex py-4 px-2">
+                            <li class="pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                                <div class="relative">
+                                    <img src="sachin.png" alt=""
+                                        class="h-40 w-40 rounded-full custom-shadow object-cover">
+                                    <button
+                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                            class="fa-solid fa-play"></i></button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-lg">Sachin-Jigar</span>
+                                    <span class="text-md text-[#ffffff90]">Artist</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="flex mt-6 item-center">
+                            <li class="pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                                <div class="relative">
+                                    <img src="anirudh.png" alt=""
+                                        class="h-40 w-40 rounded-full custom-shadow object-cover">
+                                    <button
+                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                            class="fa-solid fa-play"></i></button>
+                                    <div class="flex flex-col">
+                                        <span class="text-lg">Anirudh Ravichander</span>
+                                        <span class="text-md text-[#ffffff90]">Artist</span>
+                                    </div>
+                                </div>
+
                             </li>
                         </ul>
 
-
-
-                        <ul class="flex py-4 px-2">
-                            <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                <div class="relative">
-                                    <img src="Making .png" alt="" class="h-40 w-40  custom-shadow object-cover">
-                                    <button
-                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                            class="fa-solid fa-play"></i></button>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span>Making memories</span>
-                                    <span class="text-sm text-[#ffffff90]">Karan aujla,Ikky</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="flex py-4 px-2">
-                            <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                <div class="relative">
-                                    <img src="jawaani.png" alt="" class="h-40 w-40  custom-shadow object-cover">
-                                    <button
-                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                            class="fa-solid fa-play"></i></button>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span>Yeh Jawaani Hai Diwaani</span>
-                                    <span class="text-sm text-[#ffffff90]">Pritam</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="flex py-4 px-2">
-                            <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                <div class="relative">
-                                    <img src="Moostape.png" alt="" class="h-40 w-40  custom-shadow object-cover">
-                                    <button
-                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                            class="fa-solid fa-play"></i></button>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span>Moostape</span>
-                                    <span class="text-sm text-[#ffffff90] ">Sidhu Moose Wala</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="flex py-4 px-2">
-                            <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
-                                <div class="relative">
-                                    <img src="aaj.png" alt="" class="h-40 w-40  custom-shadow object-cover">
-                                    <button
-                                        class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
-                                            class="fa-solid fa-play"></i></button>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="text-md">Aaj Ki Raat</span>
-                                    <span class="text-sm text-[#ffffff90] ">Sachin-Jigar,Amitabh Bhatacharya </span>
-                                   
-                                </div>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="px-6 flex justify-between">
-                        <span class="text-2xl font-bold">Popular Radio</span>
-                        <span class="text-sm font-bold text-[#ffffff90]">Show all</span>
-                    </div>
-
-
                 </div>
-            </div>
-            <div class="lower h-12 bg-gradient-to-r from-pink-500 to-blue-500 text-black">
+                <div class="px-6 flex justify-between">
+                    <span class="text-2xl font-bold">Popular Albums</span>
+                    <span class="text-sm font-bold text-[#ffffff90]">Show all</span>
+                </div>
+                <div class="flex flex-row">
+                    <ul class="flex py-4 px-2">
+                        <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <div class="relative">
+                                <img src="aashiqui.png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                <button
+                                    class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+                            <div class="flex flex-col">
+                                <span>Aashiqui 2</span>
+                                <span class="text-sm text-[#ffffff90]">Mithoon,Ankit tiwari,</span>
+                                <span class="text-sm text-[#ffffff90]">Jeet gangooli</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="flex py-4 px-2">
+                        <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <div class="relative">
+                                <img src="Making .png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                <button
+                                    class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+                            <div class="flex flex-col">
+                                <span>Making memories</span>
+                                <span class="text-sm text-[#ffffff90]">Karan aujla,Ikky</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="flex py-4 px-2">
+                        <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <div class="relative">
+                                <img src="jawaani.png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                <button
+                                    class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+                            <div class="flex flex-col">
+                                <span>Yeh Jawaani Hai Diwaani</span>
+                                <span class="text-sm text-[#ffffff90]">Pritam</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="flex py-4 px-2">
+                        <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <div class="relative">
+                                <img src="Moostape.png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                <button
+                                    class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+                            <div class="flex flex-col">
+                                <span>Moostape</span>
+                                <span class="text-sm text-[#ffffff90] ">Sidhu Moose Wala</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="flex py-4 px-2">
+                        <li class="p-4 pt-0 hover:bg-gradient-to-t from-[#ffffff10] group">
+                            <div class="relative">
+                                <img src="aaj.png" alt="" class="h-40 w-40  custom-shadow object-cover">
+                                <button
+                                    class="absolute custom-shadow hidden group-hover:block bottom-2 right-0 bg-green-500 rounded-full text-black p-3 h-12 w-12"><i
+                                        class="fa-solid fa-play"></i></button>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-md">Aaj Ki Raat</span>
+                                <span class="text-sm text-[#ffffff90] ">Sachin-Jigar,Amitabh Bhatacharya </span>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-6 flex justify-between">
+                    <span class="text-2xl font-bold">Popular Radio</span>
+                    <span class="text-sm font-bold text-[#ffffff90]">Show all</span>
+                </div>
+
+
 
             </div>
+        </div>
+        <div class="lower h-14 bg-gradient-to-r from-pink-500 to-blue-500 text-black">
+            <div class="flex flex-row justify-between px-4 ">
+                <div class="flex flex-col ">
+                    <span class="font-bold text-white">Preview of Spotify</span>
+                    <span class="text-white">Sign up to get unlimited songs and podcasts with occasionals ads.No credit
+                        card Needed</span>
+                </div>
+                <div><button class="bg-white text-black text-md font-bold rounded-full p-2">Sign up free</button></div>
+            </div>
+        </div>
     </section>
 
 </body>
